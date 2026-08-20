@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF7F0;
+    --bg-cream-card: #FFFFFF;
+    --emerald-dark: #0A2619;
+    --emerald-deep: #0D3529;
+    --emerald-light: #164E3D;
+    --gold-primary: #D4AF37;
+    --gold-muted: #C5A059;
+    --gold-light: #E8D39E;
+    --gold-dark: #9A7B38;
+    --text-primary: #22252A;
+    --text-muted: #536960;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--text-primary);
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  .font-sans {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Gold and Emerald Gradients */
+.bg-emerald-gradient {
+  background: linear-gradient(135deg, #082119 0%, #0D3529 50%, #082119 100%);
+}
+
+.bg-emerald-radial {
+  background: radial-gradient(circle at center, #124738 0%, #09261E 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F0E0B0 0%, #D4AF37 50%, #A6802B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #DFBE6F 0%, #C5A059 50%, #9B7832 100%);
+}
+
+.bg-gold-shiny {
+  background: linear-gradient(135deg, #FDF0CA 0%, #E2C06B 40%, #B8933E 100%);
+}
+
+.border-gold-glow {
+  border-color: rgba(197, 160, 89, 0.35);
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.12);
+}
+
+.border-gold-solid {
+  border-color: #C5A059;
+}
+
+.glass-emerald {
+  background: rgba(13, 53, 41, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #082119;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E2B958;
+}
